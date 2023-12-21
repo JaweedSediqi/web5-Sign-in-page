@@ -1,0 +1,70 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.containner{
+    width: 100%;
+    height:100vh;
+    background-image: url(newyourk1.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    position: relative;
+}
+.hero{
+    /* text-align: center; */
+    padding: 40px 10px;
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    height: 100vh;
+    max-height: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: rgb(130, 129, 129,0.5);
+}
+.hero h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.input_box input{
+    padding: 40px;
+    flex: 1;
+    background: transparent;
+    outline: none;
+    border: none;
+    
+}
+.input_box{
+    border-radius: 10px;
+    /* max-height: 70px; */
+    /* padding: 0px 10px; */
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: aliceblue;
+    overflow: hidden;
+    transition:max-height 0.5s;
+
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    margin:  40px 30px;
+}
+.btn button{
+    padding: 15px 40px;
+    border-radius: 25px;
+    border: 0ch;
+    outline: 0ch;
+    font-size: 20px;
+}
+#signinBtn{
+    background-color: aliceblue;
+}
+#signupBtn{
+    background-color: aqua;
+}

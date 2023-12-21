@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="soiefse.css">
+</head>
+<body>
+    <div class="containner">
+        <div class="hero">
+            <h1 id="tittle">Sin Up</h1>
+            <div class="input_box" id="div">
+                <img src="mmm.png" style="background-color: black; width: 30px; border-radius: 10px; margin-left: 10px; margin-right: 20px;">
+                <input type="text" placeholder="Nmae">
+            </div>
+            <div class="input_box" id="div">
+                <img src="mmm.png" style="background-color: black; width: 30px; border-radius: 10px; margin-left: 10px; margin-right: 20px;">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input_box" id="div">
+                <img src="mmm.png" style="background-color: black; width: 30px; border-radius: 10px; margin-left: 10px; margin-right: 20px;">
+                <input type="password" placeholder="password">
+            </div>
+            <p>Forgot your paswoed <a href="">click</a></p>
+            <div class="btn">
+                <button id="signupBtn">Sign Up</button>
+                <button id="signinBtn">Sign in</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const signupBtn=document.getElementById('signupBtn');
+        const signinBtn=document.getElementById('signinBtn');
+        const tittle=document.getElementById('tittle');
+        const input_field=document.getElementById('div');
+
+        signinBtn.onclick=function(){
+            signupBtn.style.backgroundColor='white';
+            signinBtn.style.backgroundColor='aqua';
+            tittle.innerHTML='Sign in';
+            input_field.style.maxHeight='0px';
+        }
+        signupBtn.onclick=function (){
+            signinBtn.style.backgroundColor='white';
+            signupBtn.style.backgroundColor='aqua';
+            tittle.innerHTML='Sign Up';
+            input_field.style.maxHeight='100px';
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
